@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Toddler Takedown</title>
+        <link type="text/css" rel="stylesheet" href="style.css"/>
+    </head>
+    <header>
+        <h1>Toddler Takedown</h1>
+    </header>
+
+    <body>
+        <div id="stats-and-leaderboard">
+            <form class = "data-collection" id="stats">
+                <div class="info" id="player-info">
+                    <p id="challenger-info">Challenger Info</p>
+                        Name: <input type="text" placeholder="Enter your name" id="player-name"/>
+                        Age: <input type="number" placeholder="Enter your age" id="player-age"/>
+                        Height: <input type="number" placeholder="Enter your height in inches" id="player-height"/>
+                        Build:
+                        <select id="player-build">
+                            <option value="How are you built?">How are you built?</option>
+                            <option value="Fit">Fit</option>
+                            <option value="Athletic">Athletic</option>
+                            <option value="Dad Bod">Dad Bod</option>
+                            <option value="Sumo">Sumo</option>
+                            <option value="Jacked">Jacked</option>
+                            <option value="Skin & Bones">Skin & Bones</option>
+                            <option value="People think I take steroids">People think I take steroids</option>
+                        </select>
+                        Gender:
+                        <select id=player-gender>
+                            <option value="Select your gender">Select your gender</option>
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                            <option value="Rather not say">Rather not say</option>
+                        </select>
+                </div>
+                <button class="submit" id="fight">FIGHT!</button>
+            </form>
+            <div class = "server-data" id = "results">
+                <ul id = "leaderboard">Leaderboard:</ul>
+                <button id="see-leaderboard">View Leaderboard</button>
+            </div>
+        </div>
+        <div class="popup">
+            <div id="content-box">
+                <button id="close-popup">X</button>
+                <h1>Attention!</h1>
+                <p>
+                    By entering this website you agree to the following: 
+                </p>
+                <ul>
+                    <li>You are over the age of 18</li>
+                    <li>You will not go picking any fights with toddlers in real life</li>
+                    <li>Toddler takedown will not be held responsible for any real life attempts to fight toddlers</li>
+                </ul>
+                <input type="checkbox" id="terms" name="terms" value="agree" checked>
+                <label for="terms">I have read and agree to the <a href="terms.html" target="_blank">terms and conditions</a></label>
+            </div>
+        </div>
+    </body>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js" defer></script>
+</html>
